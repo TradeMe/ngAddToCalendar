@@ -1,0 +1,4 @@
+/**
+ * @license ng-add-to-calendar
+ * MIT license
+ */
