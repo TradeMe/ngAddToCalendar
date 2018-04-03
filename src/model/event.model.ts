@@ -1,16 +1,16 @@
-export class EventModel {
+export interface IEvent {
     // Event title
-    public title: string;
+    title: string;
     // Event start date
-    public start: Date;
+    start: Date;
     // Event duration (IN MINUTES)
-    public duration: number;
+    duration: number;
     // You can also choose to set an end time
     // If an end time is set, this will take precedence over duration
-    public end?: Date;
+    end?: Date;
     // Event Address
-    public address?: string;
+    address?: string;
     // Event Description
-    public description?: string;
-    public url?: string;
+    description?: string;
+    url?: string;
 }

@@ -1,9 +1,9 @@
-import { EventModel } from '../model/event.model';
+import { IEvent } from '../model/event.model';
 import { BaseCalendarGenerator } from './base-calendar.generator';
 
 export class IcsCalendarGenerator extends BaseCalendarGenerator {
 
-    constructor(protected event: EventModel) {
+    constructor(protected event: IEvent) {
         super(event);
     }
 

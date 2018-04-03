@@ -1,11 +1,11 @@
-import { EventModel } from '../model/event.model';
+import { IEvent } from '../model/event.model';
 import { BaseCalendarGenerator, MS_IN_MINUTES } from './base-calendar.generator';
 
 export const YAHOO_URL = 'http://calendar.yahoo.com/?v=60&view=d&type=20';
 
 export class YahooCalendarGenerator extends BaseCalendarGenerator {
 
-    constructor(protected event: EventModel) {
+    constructor(protected event: IEvent) {
         super(event);
     }
 

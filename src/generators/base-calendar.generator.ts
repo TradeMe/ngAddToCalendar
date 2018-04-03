@@ -1,4 +1,4 @@
-import { EventModel } from './../model/event.model';
+import { IEvent } from './../model/event.model';
 
 export const MS_IN_MINUTES = 60 * 1000;
 export const DATE_POCTUATION_REGEX = /-|:|\.\d+/g;
@@ -9,7 +9,7 @@ export abstract class BaseCalendarGenerator {
 
     public abstract get href(): string;
 
-    constructor(protected event: EventModel) {
+    constructor(protected event: IEvent) {
         this.startTime = this.formatTime(event.start);
         this.endTime = this.calculateEndTime(event);
     }

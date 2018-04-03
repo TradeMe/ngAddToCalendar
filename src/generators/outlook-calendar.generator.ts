@@ -1,4 +1,4 @@
-import { EventModel } from '../model/event.model';
+import { IEvent } from '../model/event.model';
 import { BaseCalendarGenerator } from './base-calendar.generator';
 
 // tslint:disable-next-line
@@ -7,7 +7,7 @@ export const DATE_POCTUATION_REGEX = /-|:|\.\d+/g;
 
 export class OutlookCalendarGenerator extends BaseCalendarGenerator {
 
-    constructor(protected event: EventModel) {
+    constructor(protected event: IEvent) {
         super(event);
     }
 
