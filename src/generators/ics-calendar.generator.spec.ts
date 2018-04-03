@@ -1,6 +1,6 @@
 import {} from 'jasmine';
 
-import {EventModel} from '../model/event.model';
+import {IEvent} from '../model/event.model';
 import {IcsCalendarGenerator} from './ics-calendar.generator';
 import {TestDates} from './test-dates';
 
@@ -25,7 +25,7 @@ describe('add2Calendar', () => {
                     start: TestDates._1970_01_01,
                     title: expected.title,
                     url: expected.documentURL,
-                } as EventModel;
+                } as IEvent;
 
                 const generator = new IcsCalendarGenerator(model);
 

@@ -1,5 +1,5 @@
 import {} from 'jasmine';
-import {EventModel} from '../model/event.model';
+import {IEvent} from '../model/event.model';
 import {BaseCalendarGenerator, MS_IN_MINUTES} from './base-calendar.generator';
 import {TestDates} from './test-dates';
 
@@ -13,7 +13,7 @@ describe('add2Calendar', () => {
     // tslint:enable
 
     describe('base-calendar.generator', () => {
-        let model: EventModel;
+        let model: IEvent;
 
         let getGenerator: () => BaseCalendarGenerator;
 
@@ -21,7 +21,7 @@ describe('add2Calendar', () => {
             model = {
                 end: TestDates._1970_01_02,
                 start: TestDates._1970_01_01,
-            } as EventModel;
+            } as IEvent;
         });
 
         getGenerator = () => {

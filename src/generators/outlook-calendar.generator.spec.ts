@@ -1,6 +1,6 @@
 import {} from 'jasmine';
 
-import {EventModel} from '../model/event.model';
+import {IEvent} from '../model/event.model';
 import {OUTLOOK_BASE_URL, OutlookCalendarGenerator} from './outlook-calendar.generator';
 import {TestDates} from './test-dates';
 
@@ -23,7 +23,7 @@ describe('add2Calendar', () => {
                     end: TestDates._1970_01_02,
                     start: TestDates._1970_01_01,
                     title: expected.title,
-                } as EventModel;
+                } as IEvent;
 
                 const generator = new OutlookCalendarGenerator(model);
 

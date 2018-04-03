@@ -1,6 +1,6 @@
 import {} from 'jasmine';
 
-import {EventModel} from '../model/event.model';
+import {IEvent} from '../model/event.model';
 import {MS_IN_MINUTES} from './base-calendar.generator';
 import {TestDates} from './test-dates';
 import {YAHOO_URL, YahooCalendarGenerator} from './yahoo-calendar.generator';
@@ -8,7 +8,7 @@ import {YAHOO_URL, YahooCalendarGenerator} from './yahoo-calendar.generator';
 describe('add2Calendar', () => {
     describe('yahoo-calendar.generator', () => {
         let expected: any;
-        let model: EventModel;
+        let model: IEvent;
         let generator: any;
 
         beforeEach(() => {
@@ -26,7 +26,7 @@ describe('add2Calendar', () => {
                 end: TestDates._1970_01_02,
                 start: TestDates._1970_01_01,
                 title: expected.title,
-            } as EventModel;
+            } as IEvent;
 
             generator = new YahooCalendarGenerator(model);
         });

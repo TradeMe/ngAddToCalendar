@@ -1,7 +1,7 @@
 {
     "name": "ng-add-to-calendar",
     "private": true,
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Angular library to add custom events to common calendar applications",
     "main": "./bundles/ng-add-to-calendar.umd.js",
     "module": "./esm5/ng-add-to-calendar.js",
