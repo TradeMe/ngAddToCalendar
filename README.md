@@ -12,7 +12,7 @@ npm install @trademe/ng-add-to-calendar
 Import AddToCalendarModule into your main app module.
 
 ```
-import { AddToCalendarModule } from 'ng-add-to-calendar';
+import { AddToCalendarModule } from '@trademe/ng-add-to-calendar';
 
 @NgModule({
   imports: [
@@ -26,7 +26,7 @@ Import AddToCalendarService into your component.
 Import SafeUrl and DomSanitizer for creating usable urls in your template.
 
 ```
-import { AddToCalendarService } from 'ng-add-to-calendar';
+import { AddToCalendarService } from '@trademe/ng-add-to-calendar';
 import { SafeUrl, DomSanitizer } from '@angular/platform-browser';
 
 public googleCalendarEventUrl: SafeUrl;
