@@ -4,7 +4,7 @@ Angular library to add custom events to common calendar applications (Google Cal
 ## Install
 
 ```
-npm install @trademe/ngAddToCalendar
+npm install @trademe/ng-add-to-calendar
 ```
 
 ## Use
