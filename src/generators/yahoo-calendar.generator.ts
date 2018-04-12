@@ -1,11 +1,11 @@
-import { IEvent } from '../model/event.model';
+import { ICalendarEvent } from '../model/calendar-event.model';
 import { BaseCalendarGenerator, MS_IN_MINUTES } from './base-calendar.generator';
 
 export const YAHOO_URL = 'http://calendar.yahoo.com/?v=60&view=d&type=20';
 
 export class YahooCalendarGenerator extends BaseCalendarGenerator {
 
-    constructor(protected event: IEvent) {
+    constructor(protected event: ICalendarEvent) {
         super(event);
     }
 
@@ -33,6 +33,6 @@ export class YahooCalendarGenerator extends BaseCalendarGenerator {
         );
         return chunk
             + `&title=${encodeURIComponent(this.event.title || '')}`
-            + `&desc=${encodeURIComponent(this.event.description || '')}`;
+            + `&desc=${encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description) || '')}`;
     }
 }

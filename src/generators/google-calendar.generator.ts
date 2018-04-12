@@ -1,4 +1,4 @@
-import { IEvent } from '../model/event.model';
+import { ICalendarEvent } from '../model/calendar-event.model';
 import { BaseCalendarGenerator } from './base-calendar.generator';
 
 export const GOOGLE_URL = 'https://www.google.com/calendar/render?action=TEMPLATE';
@@ -6,7 +6,7 @@ export const DATE_POCTUATION_REGEX = /-|:|\.\d+/g;
 
 export class GoogleCalendarGenerator extends BaseCalendarGenerator {
 
-    constructor(protected event: IEvent) {
+    constructor(protected event: ICalendarEvent) {
         super(event);
     }
 
@@ -18,6 +18,6 @@ export class GoogleCalendarGenerator extends BaseCalendarGenerator {
 
         return chunk
             + `&text=${encodeURIComponent(this.event.title || '')}`
-            + `&details=${encodeURIComponent(this.event.description || '')}`;
+            + `&details=${encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description) || '')}`;
     }
 }

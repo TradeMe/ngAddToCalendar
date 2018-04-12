@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{},"exports":[{"from":"./service/ng-add-to-calendar.service","export":["NgAddToCalendarService"]},{"from":"./ng-add-to-calendar.module","export":["NgAddToCalendarModule"]},{"from":"./model/calendar-event.model","export":["ICalendarEvent"]}]}]

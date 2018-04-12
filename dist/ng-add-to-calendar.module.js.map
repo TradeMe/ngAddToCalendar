@@ -1,0 +1,1 @@
+{"version":3,"file":"ng-add-to-calendar.module.js","sourceRoot":"","sources":["../src/ng-add-to-calendar.module.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAAyC;AAEzC,mFAA8E;AAW9E;IAAA;IAAqC,CAAC;IAAzB,qBAAqB;QANjC,eAAQ,CAAC;YACR,YAAY,EAAE,EAAE;YAChB,SAAS,EAAE,CAAC,mDAAsB,CAAC;YACnC,OAAO,EAAE,EAAE;SACZ,CAAC;OAEW,qBAAqB,CAAI;IAAD,4BAAC;CAAA,AAAtC,IAAsC;AAAzB,sDAAqB"}
