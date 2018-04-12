@@ -1,6 +1,5 @@
 {
-  "name": "ng-add-to-calendar",
-  "private": true,
+  "name": "@trademe/ng-add-to-calendar",
   "version": "2.0.0",
   "description": "Angular library to add custom events to common calendar applications",
   "main": "dist/index.js",
@@ -14,7 +13,7 @@
   ],
   "scripts": {
     "prebuild": "rimraf ./dist ./compiled && mkdir dist",
-    "build": "npm run prebuild && ngc -p ./tsconfig.json && tsc -p ./tsconfig.json"
+    "build": "ngc -p ./tsconfig.json && tsc -p ./tsconfig.json"
   },
   "repository": {
     "type": "git",
