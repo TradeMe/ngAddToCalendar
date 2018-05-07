@@ -34,12 +34,10 @@ var YahooCalendarGenerator = /** @class */ (function (_super) {
     };
     Object.defineProperty(YahooCalendarGenerator.prototype, "href", {
         get: function () {
-            var chunk = encodeURI(
-            // tslint:disable-next-line
-            exports.YAHOO_URL + "&st=" + this.startTime + "&dur=" + (this.getYahooEventDuration() || "") + "&in_loc=" + (this.event.address || "") + "&url=" + (this.event.url || ""));
+            var chunk = encodeURI(exports.YAHOO_URL + "&st=" + (this.startTime || '') + "&dur=" + (this.getYahooEventDuration() || '') + "&in_loc=" + (this.event.address || '') + "&url=" + (this.event.url || ''));
             return chunk
                 + ("&title=" + encodeURIComponent(this.event.title || ''))
-                + ("&desc=" + encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description) || ''));
+                + ("&desc=" + encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description || '') || ''));
         },
         enumerable: true,
         configurable: true

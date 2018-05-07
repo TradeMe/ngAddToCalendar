@@ -28,11 +28,10 @@ export class YahooCalendarGenerator extends BaseCalendarGenerator {
 
     public get href(): string {
         const chunk = encodeURI(
-            // tslint:disable-next-line
-            `${YAHOO_URL}&st=${this.startTime}&dur=${(this.getYahooEventDuration() || "")}&in_loc=${(this.event.address || "")}&url=${(this.event.url || "")}`,
+            `${YAHOO_URL}&st=${this.startTime || ''}&dur=${(this.getYahooEventDuration() || '')}&in_loc=${(this.event.address || '')}&url=${(this.event.url || '')}`,
         );
         return chunk
             + `&title=${encodeURIComponent(this.event.title || '')}`
-            + `&desc=${encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description) || '')}`;
+            + `&desc=${encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description || '') || '')}`;
     }
 }

@@ -22,12 +22,10 @@ var GoogleCalendarGenerator = /** @class */ (function (_super) {
     }
     Object.defineProperty(GoogleCalendarGenerator.prototype, "href", {
         get: function () {
-            var chunk = encodeURI(
-            // tslint:disable-next-line
-            exports.GOOGLE_URL + "&dates=" + (this.startTime || "") + "/" + (this.endTime || "") + "&location=" + (this.event.address || "") + "&sprop=" + (this.event.url || ""));
+            var chunk = encodeURI(exports.GOOGLE_URL + "&dates=" + (this.startTime || '') + "/" + (this.endTime || '') + "&location=" + (this.event.address || '') + "&sprop=" + (this.event.url || ''));
             return chunk
                 + ("&text=" + encodeURIComponent(this.event.title || ''))
-                + ("&details=" + encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description) || ''));
+                + ("&details=" + encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description || '') || ''));
         },
         enumerable: true,
         configurable: true

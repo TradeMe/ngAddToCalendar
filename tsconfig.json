@@ -13,6 +13,7 @@
     "rootDir": "./src",
     "sourceMap": true,
     "target": "es5",
+    "strict": true,
     "inlineSources": false
   },
   "files": [

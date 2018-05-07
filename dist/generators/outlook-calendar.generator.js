@@ -23,12 +23,10 @@ var OutlookCalendarGenerator = /** @class */ (function (_super) {
     }
     Object.defineProperty(OutlookCalendarGenerator.prototype, "href", {
         get: function () {
-            var chunk = encodeURI(
-            // tslint:disable-next-line
-            exports.OUTLOOK_BASE_URL + "&startdt=" + (this.startTime || "") + "&enddt=" + (this.endTime || "") + "&uid=" + this.uid + "&location=" + this.event.address);
+            var chunk = encodeURI(exports.OUTLOOK_BASE_URL + "&startdt=" + (this.startTime || '') + "&enddt=" + (this.endTime || '') + "&uid=" + this.uid + "&location=" + this.event.address);
             return chunk
                 + ("&subject=" + encodeURIComponent(this.event.title || ''))
-                + ("&body=" + encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description) || ''));
+                + ("&body=" + encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description || '') || ''));
         },
         enumerable: true,
         configurable: true

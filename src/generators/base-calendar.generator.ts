@@ -13,7 +13,7 @@ export abstract class BaseCalendarGenerator {
     constructor(protected event: ICalendarEvent) {
         this.startTime = this.formatTime(event.start);
         this.endTime = this.calculateEndTime(event);
-        this.description = this.formatDescription(event.description);
+        this.description = this.formatDescription(event.description || '');
     }
 
     protected get uid(): string {
@@ -31,7 +31,7 @@ export abstract class BaseCalendarGenerator {
         return description.replace(/'/g, '\'');
     }
 
-    protected formatDescriptionForOnlineCalendar(description: string): string {
+    protected formatDescriptionForOnlineCalendar(description: string): string | null {
         if (description.length) {
             return description.replace(/\\r/g, '\n').replace(/\\n/g, '\n');
         }

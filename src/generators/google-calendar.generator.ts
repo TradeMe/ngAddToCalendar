@@ -12,12 +12,11 @@ export class GoogleCalendarGenerator extends BaseCalendarGenerator {
 
     public get href(): string {
         const chunk = encodeURI(
-            // tslint:disable-next-line
-            `${GOOGLE_URL}&dates=${(this.startTime || "")}/${(this.endTime || "")}&location=${(this.event.address || "")}&sprop=${(this.event.url || "")}`,
+            `${GOOGLE_URL}&dates=${(this.startTime || '')}/${(this.endTime || '')}&location=${(this.event.address || '')}&sprop=${(this.event.url || '')}`,
         );
 
         return chunk
             + `&text=${encodeURIComponent(this.event.title || '')}`
-            + `&details=${encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description) || '')}`;
+            + `&details=${encodeURIComponent(this.formatDescriptionForOnlineCalendar(this.event.description || '') || '')}`;
     }
 }

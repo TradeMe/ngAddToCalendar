@@ -7,7 +7,7 @@ var BaseCalendarGenerator = /** @class */ (function () {
         this.event = event;
         this.startTime = this.formatTime(event.start);
         this.endTime = this.calculateEndTime(event);
-        this.description = this.formatDescription(event.description);
+        this.description = this.formatDescription(event.description || '');
     }
     Object.defineProperty(BaseCalendarGenerator.prototype, "uid", {
         get: function () {

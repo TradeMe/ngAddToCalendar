@@ -10,7 +10,7 @@ export declare abstract class BaseCalendarGenerator {
     constructor(event: ICalendarEvent);
     protected readonly uid: string;
     protected formatDescription(description: string): string;
-    protected formatDescriptionForOnlineCalendar(description: string): string;
+    protected formatDescriptionForOnlineCalendar(description: string): string | null;
     protected formatTime(date: Date): string;
     protected calculateEndTime(event: any): string;
     private s4();
