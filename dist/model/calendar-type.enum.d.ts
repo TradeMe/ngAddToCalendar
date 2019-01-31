@@ -3,5 +3,5 @@ export declare enum CalendarTypeEnum {
     yahoo = 1,
     iCalendar = 2,
     outlook = 3,
-    outlookLive = 4
+    outlookLive = 4,
 }

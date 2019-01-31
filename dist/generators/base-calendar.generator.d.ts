@@ -6,12 +6,12 @@ export declare abstract class BaseCalendarGenerator {
     protected startTime: string;
     protected endTime: string;
     protected description: string;
-    abstract readonly href: string;
+    readonly abstract href: string;
     constructor(event: ICalendarEvent);
     protected readonly uid: string;
     protected formatDescription(description: string): string;
     protected formatDescriptionForOnlineCalendar(description: string): string | null;
     protected formatTime(date: Date): string;
     protected calculateEndTime(event: any): string;
-    private s4;
+    private s4();
 }

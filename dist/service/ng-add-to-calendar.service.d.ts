@@ -4,5 +4,5 @@ export declare class NgAddToCalendarService {
     calendarType: typeof CalendarTypeEnum;
     getHrefFor(type: CalendarTypeEnum, event: ICalendarEvent): string;
     private _factory;
-    private getGeneratorFor;
+    private getGeneratorFor(type);
 }
