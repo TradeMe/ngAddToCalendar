@@ -26,10 +26,10 @@
     "url": "https://github.com/TradeMe/ngAddToCalendar/issues"
   },
   "peerDependencies": {
-    "@angular/common": "^7.2.1",
-    "@angular/compiler": "^7.2.1",
-    "@angular/core": "^7.2.1",
-    "@angular/platform-browser": "^7.2.1",
+    "@angular/common": ">=7.0.0",
+    "@angular/compiler": ">=7.0.0",
+    "@angular/core": ">=7.0.0",
+    "@angular/platform-browser": ">=7.0.0",
     "core-js": "^2.5.7",
     "rxjs": "^6.3.3",
     "zone.js": "^0.8.26"
