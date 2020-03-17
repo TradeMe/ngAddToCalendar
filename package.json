@@ -1,6 +1,6 @@
 {
   "name": "@trademe/ng-add-to-calendar",
-  "version": "3.0.4",
+  "version": "4.0.0",
   "description": "Angular library to add custom events to common calendar applications",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
