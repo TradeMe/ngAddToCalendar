@@ -6,13 +6,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.NgAddToCalendarModule = void 0;
 var core_1 = require("@angular/core");
 var ng_add_to_calendar_service_1 = require("./service/ng-add-to-calendar.service");
 var NgAddToCalendarModule = /** @class */ (function () {
     function NgAddToCalendarModule() {
     }
     NgAddToCalendarModule = __decorate([
-        core_1.NgModule({
+        (0, core_1.NgModule)({
             declarations: [],
             providers: [ng_add_to_calendar_service_1.NgAddToCalendarService],
             exports: []

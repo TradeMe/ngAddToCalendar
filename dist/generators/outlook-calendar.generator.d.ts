@@ -5,5 +5,5 @@ export declare const DATE_POCTUATION_REGEX: RegExp;
 export declare class OutlookCalendarGenerator extends BaseCalendarGenerator {
     protected event: ICalendarEvent;
     constructor(event: ICalendarEvent);
-    readonly href: string;
+    get href(): string;
 }

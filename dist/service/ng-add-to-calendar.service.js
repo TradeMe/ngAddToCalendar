@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.NgAddToCalendarService = void 0;
 var core_1 = require("@angular/core");
 var google_calendar_generator_1 = require("./../generators/google-calendar.generator");
 var ics_calendar_generator_1 = require("./../generators/ics-calendar.generator");
@@ -32,7 +33,7 @@ var NgAddToCalendarService = /** @class */ (function () {
         return this._factory[type];
     };
     NgAddToCalendarService = __decorate([
-        core_1.Injectable()
+        (0, core_1.Injectable)()
     ], NgAddToCalendarService);
     return NgAddToCalendarService;
 }());

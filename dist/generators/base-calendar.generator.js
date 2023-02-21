@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BaseCalendarGenerator = exports.DATE_POCTUATION_REGEX = exports.MS_IN_MINUTES = void 0;
 exports.MS_IN_MINUTES = 60 * 1000;
 exports.DATE_POCTUATION_REGEX = /-|:|\.\d+/g;
 var BaseCalendarGenerator = /** @class */ (function () {
@@ -20,7 +21,7 @@ var BaseCalendarGenerator = /** @class */ (function () {
                 + this.s4()
                 + this.s4()).toLowerCase();
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     BaseCalendarGenerator.prototype.formatDescription = function (description) {

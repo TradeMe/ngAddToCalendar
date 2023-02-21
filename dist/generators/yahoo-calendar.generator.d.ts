@@ -5,5 +5,5 @@ export declare class YahooCalendarGenerator extends BaseCalendarGenerator {
     protected event: ICalendarEvent;
     constructor(event: ICalendarEvent);
     private getYahooEventDuration;
-    readonly href: string;
+    get href(): string;
 }

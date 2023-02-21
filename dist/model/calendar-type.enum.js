@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CalendarTypeEnum = void 0;
 var CalendarTypeEnum;
 (function (CalendarTypeEnum) {
     CalendarTypeEnum[CalendarTypeEnum["google"] = 0] = "google";
