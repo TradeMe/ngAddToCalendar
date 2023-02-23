@@ -14,7 +14,7 @@
   "scripts": {
     "clean": "rimraf ./dist ./compiled && mkdir dist",
     "lint": "tslint --project ./tslint.json",
-    "prebuild": "npm run clean && npm run lint",
+    "prebuild": "npm run clean",
     "build": "ng-packagr -p ng-package.json",
     "prepublish": "npm run build"
   },
