@@ -19,7 +19,7 @@
     "url": "https://github.com/TradeMe/ngAddToCalendar/issues"
   },
   "peerDependencies": {
-    "@angular/core": "^14.2.12"
+    "@angular/core": "^14.0.0"
   },
   "module": "fesm2015/trademe-ng-add-to-calendar.mjs",
   "es2020": "fesm2020/trademe-ng-add-to-calendar.mjs",

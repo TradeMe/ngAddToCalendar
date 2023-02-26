@@ -26,19 +26,19 @@
     "url": "https://github.com/TradeMe/ngAddToCalendar/issues"
   },
   "peerDependencies": {
-    "@angular/core": "^14.2.12"
+    "@angular/core": "^14.0.0"
   },
   "devDependencies": {
-    "@angular/common": "^14.2.12",
-    "@angular/compiler": "^14.2.12",
+    "@angular/common": "^14.0.0",
+    "@angular/compiler": "^14.0.0",
     "@angular/core": "^14.2.12",
-    "@angular/platform-browser": "^14.2.12",
+    "@angular/platform-browser": "^14.0.0",
     "core-js": "^3.6.5",
     "rxjs": "~7.5.7",
     "zone.js": "~0.11.8",
-    "@angular/cli": "14.2.10",
-    "@angular/compiler-cli": "^14.2.12",
-    "@angular/language-service": "^14.2.12",
+    "@angular/cli": "14.0.0",
+    "@angular/compiler-cli": "^14.0.0",
+    "@angular/language-service": "^14.0.0",
     "@types/node": "10.17.45",
     "codelyzer": "^6.0.2",
     "rimraf": "^3.0.0",
